@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 300px;
+  height: 100px;
+  background-color: rgb(192, 222, 234);
+  border: 1px solid black;
+  /* transform: scale(0.5,0.5); */
+  /* transform: skewX(20deg); */
+  /* transform: skewY(20deg); */
+  /* transform: skew(20deg, 10deg); */
+  
+  /* rotate: 20deg; */
+}
+div#myDiv1 {
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+
+div#myDiv2 {
+  transform: matrix(1, 0, 0.5, 1, 0, 0);
+  border-radius: 25%;
+  background-image: linear-gradient(orange,white, green);
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.img1{
+    transition: all ease 1s;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transform: rotateZ(90deg);
+    border-radius: 25%;
+    transform: matrix(1, 0, 0.5, 1, 0, 0);
+    
+}
+</style>
+<link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+<h1>The translate() Method</h1>
+<p>The translate() method moves an element from its current position:</p>
+
+<div style="text-align:center" >
+The 2D image
+</div>
+
+<div id="myDiv1">
+    Using the matrix() method.
+    </div>
+    
+    <div id="myDiv2">
+    Another use of the matrix() method.
+    </div>
+
+    <img class=img1 src="F:\synetalsolutions\sunday\Assets\image\photo\for3D-use.jpeg">
+    <img class=img1 src="F:\synetalsolutions\sunday\Assets\image\photo\for3D-use.jpeg">
+    <img class=img1 src="F:\synetalsolutions\sunday\Assets\image\photo\for3D-use.jpeg">
+    <img class=img src="F:\synetalsolutions\sunday\Assets\image\photo\for3D-use.jpeg">
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+button:hover{
+    -webkit-box-reflect:
+    1px linear-gradient(transparent,rgb(237, 63, 19));
+    box-shadow: 0 0 5px rgb(237, 63, 19),0 0 15px rgb(237, 63, 19),0 0 25px rgb(237, 63, 19);
+    cursor: pointer;
+    border-radius: 25%;
+    transition: ease 0.5s;
+    
+    -ms-transform: scale(1.5); /* IE 9 */    /*use for zoom*/
+    -webkit-transform: scale(0.5); /* Safari 3-8 */
+    transform: scale(1.1);
+   }
+img:hover{
+    -webkit-box-reflect:
+    1px linear-gradient(transparent,rgb(237, 63, 19));
+    box-shadow: 0 0 5px rgb(237, 63, 19),0 0 15px rgb(237, 63, 19),0 0 25px rgb(237, 63, 19);
+    cursor: pointer;
+    border-radius: 25%;
+    transition: ease 0.5s;
+
+}

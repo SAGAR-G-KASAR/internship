@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 300px;
+  height: 100px;
+  background-color: rgb(218, 181, 203);
+  border: 1px solid black;
+}
+
+#myDiv {
+  transform: rotateY(260deg);
+}
+#myDiv1{
+  transform: rotateZ(90deg);
+  
+}
+.img{
+    transition: all ease 5s;
+    margin-top: 50px;
+    margin-left: 500px;
+    margin-bottom: 20px;
+    height: 350px;
+    width: 500px;
+    /* transform: rotateZ(90deg); */
+    /* object-fit: cover;
+    object-position: 25% 300%; */
+
+}
+.img1{
+    -webkit-mask-image: linear-gradient(black, transparent);
+    mask-image: linear-gradient(black, transparent);
+    transition: all ease 5s;
+    margin-top: 0px;
+    margin-left: 500px;
+    margin-bottom: 300px;
+    height: 350px;
+    width: 500px;
+    /* transform: rotateZ(90deg); */
+    /* object-fit: cover;
+    object-position: 25% 300%; */
+}
+.button{
+    height:50px;
+    width: 75px;
+    margin-left: 10px;
+    border-radius: 5px 25px;
+    border: 1px;
+    background-image: linear-gradient(rgb(232, 244, 190),rgb(234, 252, 131));
+
+}
+</style>
+<link rel="stylesheet" href="3d.css">
+</head>
+<body>
+
+<h1>The rotateY() Method</h1>
+
+<p>The rotateY() method rotates an element around its Y-axis at a given degree.</p>
+
+<div>
+This is main image.
+</div><br>
+
+<div id="myDiv">
+This div 3D image.
+</div>      <br>
+
+<div id="myDiv1">
+    This div 3D image.
+    </div>
+<div>
+     <img class=img src="F:\synetalsolutions\sunday\Assets\image\photo\for3D-use.jpeg ">
+     <img class=img1 src="F:\synetalsolutions\sunday\Assets\image\photo\for3D-use.jpeg ">
+        </div>
+<br><br><br><br>
+     <button class="button"> OPEN </button>
+     <button class="button"> SAVE </button> 
+     <button class="button"> CLOSE </button> 
+     <button class="button"> DELETE </button>  
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+           button{
+            background-color: aqua;
+            height:30px;
+            border-radius: 10px;
+            cursor: pointer;
+           }
+
+           img{
+            height:200px;
+            width:200px;
+           }
+           
+           
+        </style>
+       <link rel="stylesheet" href="style.css"> 
+    </head>    
+    <body>
+      
+        <h1>JavaScript HTML Events</h1>
+        <h2>The onclick Attribute</h2>
+        
+        <ul id="myList">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>GreenTea</li>
+        </ul>
+
+        <div id="demo"></div>
+        <div id="demo1"></div>
+        <div id="demo2"></div>
+        <div id="demo3"></div>
+        <div id="demo4"></div>
+        <div id="demo5"></div>
+        
+        <button onload="document.getElementById('demo').innerHTML=Date()">What is value?</button><br><br>
+        <button onclick="document.getElementById('demo1').innerHTML=person1.age">Age is?</button><br><br>
+        <button onclick="document.getElementById('demo2').innerHTML=person1.lastName">LastName</button><br><br>
+        <button onclick="document.getElementById('demo3').innerHTML=person1.firstName ">FirstName</button><br><br>
+        <button onclick="document.getElementById('demo5').innerHTML =html;">Given List</button>
+
+        <script>
+        const person1 = {firstName: "Sohan-kasar", lastName:"Kasar",age:25, eyecolor:"green",img:src=""};
+        </script>
+
+            <img src="F:\synetalsolutions\sunday\Assets\image\photo\51784-4-desktop-computer-hq-image-free-png.jpeg" > </img>
+         <script>
+            let html = document.getElementById("myList").innerHTML;
+            
+        </script>
+
+        <script>
+            let text = "Sagar Kasar";
+            document.getElementById("demo").innerHTML = text; 
+            alert(text.length)
+        </script>
+    
+
+    </body>
+</html>

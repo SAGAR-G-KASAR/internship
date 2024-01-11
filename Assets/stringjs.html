@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use bottons</title>
+        <style>
+            button{
+                background-color: rgba(102, 240, 234, 0.667);
+                text-align: center;
+            }
+        </style>
+
+    </head>    
+
+    <body style="background-color: rgba(240, 255, 255, 0.853);">
+
+        <h1>JavaScript String Methods</h1>
+        <p>Convert string to upper case:</p>
+
+        <button onclick="myFunction()">Try it</button>
+        <button onclick="myFunction1()">Click for Uppercase </button>
+
+
+        <p id="demo">Hello World!</p>
+        <p id="demo1">hello everyone...</p>
+        <p id="demo2"></p>
+
+        <script>
+            function myFunction() {
+                let text = document.getElementById("demo").innerHTML;
+                document.getElementById("demo").innerHTML = text.toUpperCase();
+            }
+        </script>
+
+        <script>
+            function myFunction1() {
+                 let text = document.getElementById("demo1").innerHTML;
+                document.getElementById("demo1").innerHTML = text.toUpperCase();
+            }
+        </script> 
+        
+        <div><script>
+                let answer1 = "It's alright";
+                let answer2 = "He is called 'Johnny'";
+                let answer3 = 'He is called "Johnny"'; 
+                
+                document.getElementById("demo2").innerHTML =
+                answer1 + "<br>" + answer2 + "<br>" + answer3; 
+            </script>
+        </div>
+
+        <h1>JavaScript Strings</h1>
+        <h2>The length Property</h2>
+
+        <p>The length of the string is:</p>
+        <p id="demo3"></p>
+
+        <script>
+            let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            document.getElementById("demo3").innerHTML = text.length;
+        </script>
+
+        <p>The bracked notation [] returns an indexed element from a string:</p>
+        <p id="demo4"></p>
+
+        <script>
+            const name = "SagarKasar";
+            let letter = name[5]; //ans is K because start from 0
+
+            document.getElementById("demo4").innerHTML = letter;
+        </script>
+
+        <p>The charAt() method returns the character at a given position in a string:</p>
+        <p id="demo5"></p>
+        
+        <script>
+        var text1 = "HELLO@WORLD";
+        document.getElementById("demo5").innerHTML = text1.charAt(5);
+        
+        </script>
+
+            <p>The charCodeAt() method returns the unicode of the character at a given position in a string:</p>
+            <p id="demo6"></p>
+
+            <script>
+            let text2 = "AHELLO WORLD";
+            document.getElementById("demo6").innerHTML = text.charCodeAt(0);  //charCodeAt() use for asci-code of given character
+        </script>
+
+        <p>The sliced (extracted) part of the string is:</p>
+        <p id="demo7"></p>
+        <p id="demo8"></p>
+        <p id="demo9"></p>
+        <script>
+            let text3 = "Sagar,Kasar,Maharashtra";
+            let part = text3.slice(7,16);  //slice(7,16) start-end parameter
+            let part1= text3.slice(-12);  //slice(-12)return -12 char print
+            let part2 = text3.slice(-10,0)
+            
+            document.getElementById("demo7").innerHTML = part;
+            document.getElementById("demo8").innerHTML = part1; 
+            document.getElementById("demo9").innerHTML = part2;
+
+        </script>
+
+
+         <p id="demo10"></p>  
+        <script>                    //for cancatination
+            let a = "Hello";
+            let a1 = "sagar";
+            let a2 = a.concat(" ",a1);
+            document.getElementById("demo10").innerHTML = a2;
+        </script>    
+
+        <h5 >use for remove white space in the string trim()</h5>
+        <p id="demo11"></p>
+
+        
+        <script>
+            let t1 = "       Sagar Kasar       ";
+            let t2 = t1.trim();              //use for remove white space in the string
+
+            document.getElementById("demo11").innerHTML =
+            "Length t1 = " + t1.length + "<br>Length t2 = " + t2.length;
+        </script>
+
+        
+
+    </body>
+</html>
